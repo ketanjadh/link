@@ -1,0 +1,299 @@
+<div class="rightPanelTabs">
+  <div class="btn-group-custom">
+    <div class=" btn-curve profile-btn-1" [class.active]="activeIndex ==1" (click)="profileToggle(1)"><i
+        class="profile-icon icon-1"></i><span>Graph</span></div>
+    <div class=" btn-curve profile-btn-2" [class.active]="activeIndex ==2" (click)="profileToggle(2)"><i
+        class="profile-icon icon-2"></i><span>Vertices</span></div>
+    <div class=" btn-curve profile-btn-3" [class.active]="activeIndex ==3" (click)="profileToggle(3)"><i
+        class="profile-icon icon-3"></i><span>Edges</span></div>
+    <div class=" btn-curve profile-btn-4" [class.active]="activeIndex ==4" (click)="profileToggle(4)"><i
+        class="profile-icon icon-4"></i><span>Histogram</span></div>
+
+  </div>
+
+  <div class="pro-btn-group scrollbar" [class.active]="activeIndex ==1">
+
+    <div class="profile-card-main ">
+
+      <div class="accordion-main">
+        <mat-accordion class="mat-accordion-custom">
+          <mat-expansion-panel [(expanded)]="Gdetails">
+            <mat-expansion-panel-header>
+              <mat-panel-title> <img src="./assets/image/icon/node-right-tab-icon.svg"> Details </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="accordion-body  ">
+              <img src="./assets/image/icon/mentions-ico.png">
+              <button mat-stroked-button class="btn-custom">{{graphName}}</button>
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+        <mat-accordion class="mat-accordion-custom">
+
+          <mat-expansion-panel [(expanded)]="Gflows">
+
+            <mat-expansion-panel-header>
+              <mat-panel-title> <img src="./assets/image/icon/node-right-tab-icon.svg">Flows<span
+                  class="notification-icon">{{graphFlowCount}}</span> </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="accordion-body   table-custom ">
+              <table class="table   table-bordered">
+                <tbody>
+                  <tr>
+                    <td scope="col"><input name="check" (change)="selectAllItems($event, 'node')" type="checkbox"></td>
+                    <th scope="col"><b>Nodes</b></th>
+                    <th scope="col">{{nodeCount}}</th>
+                  </tr>
+                  <tr>
+                    <td scope="col"><input name="check" (change)="selectAllItems($event, 'edge')" type="checkbox"></td>
+                    <td scope="col"><b>Edges</b></td>
+                    <td scope="col">{{edgeCount}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+        <mat-accordion class="mat-accordion-custom">
+          <mat-expansion-panel [(expanded)]="Gnodes">
+            <mat-expansion-panel-header>
+              <mat-panel-title> <img src="./assets/image/icon/node-right-tab-icon.svg"> Nodes<span
+                  class="notification-icon">{{graphNodeCount}}</span> </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="accordion-body   table-custom">
+              <table class="table table-bordered ">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Node Label</th>
+                    <th scope="col">Node Count</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let column of nodeLabelArr">
+                    <td scope="col"><input name="check" (change)="customizeNodeSelection($event,'label',column.label)"
+                        type="checkbox"></td>
+                    <td><img [src]="column.bgImage" [alt]="column.label" />
+                      {{column.label}}
+                    </td>
+                    <td>
+                      {{column.count}}
+                    </td>
+                  </tr>
+
+
+
+                </tbody>
+              </table>
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+        <mat-accordion class="mat-accordion-custom">
+          <mat-expansion-panel [(expanded)]="Gedges">
+            <mat-expansion-panel-header>
+              <mat-panel-title> <img src="./assets/image/icon/node-right-tab-icon.svg"> Edges <span
+                  class="notification-icon">{{graphEdgeCount}}</span></mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="accordion-body   table-custom">
+              <table class="table table-bordered ">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Edge Type</th>
+                    <th scope="col">Edge Count</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let column of edgeLabelArr | keyvalue">
+                    <td scope="col">
+                      <input name="check" (change)="customizeEdgeSelection($event,'label',column.key)"
+                        type="checkbox">
+                      </td>
+                    <td>{{column.key}}</td>
+                    <td>{{column.value}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </div>
+    </div>
+  </div>
+  <div class="pro-btn-group scrollbar" [class.active]="activeIndex ==2">
+
+    <div class="profile-card-main ">
+      <div class="accordion-main">
+        <mat-accordion class="mat-accordion-custom">
+          <mat-expansion-panel [(expanded)]="Vdetails">
+            <mat-expansion-panel-header>
+              <mat-panel-title> <img src="./assets/image/icon/sub-graph-right-tab-icon.svg"> details </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="accordion-body  ">
+              <ng-container *ngIf="this.grphservice.selectedIds.length == 1">
+                <img [src]="this.grphservice.selectedNodesBg">
+                <button mat-stroked-button class="btn-custom">{{grphservice.nodeLabel | titlecase}}</button>
+                <p>{{grphservice.selectedNodeVal}}</p>
+              </ng-container>
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+        <mat-accordion class="mat-accordion-custom">
+          <mat-expansion-panel [(expanded)]="Vpropertes">
+            <mat-expansion-panel-header>
+              <mat-panel-title> <img src="./assets/image/icon/sub-graph-right-tab-icon.svg"> propertes
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="accordion-body   table-custom ">
+              <table class="table table-bordered ">
+                <thead>
+                  <tr>
+
+                    <th scope="col">Property</th>
+                    <th scope="col">Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let column of grphservice.nodeAllAtributes | keyvalue">
+
+                    <td>
+                      {{column.key}}
+                    </td>
+                    <td>
+                      {{column.value}}
+                    </td>
+                  </tr>
+
+
+
+
+                </tbody>
+
+              </table>
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+        <mat-accordion class="mat-accordion-custom">
+          <mat-expansion-panel [(expanded)]="Vvertices">
+            <mat-expansion-panel-header>
+              <mat-panel-title> <img src="./assets/image/icon/sub-graph-right-tab-icon.svg"> Vertices<span
+                  class="notification-icon">{{verticesBadgeCount}}</span> </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="accordion-body   table-custom">
+              <table class="table table-bordered ">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Relationships</th>
+                    <th scope="col">Target Node</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let column of grphservice.verTicsDataArr">
+                    <td scope="col"><input name="check"
+                        (change)="customizeNodeEdgeSelection($event,column.nodeProp,column.edgeProp,column.targetId,column.relationId)"
+                        type="checkbox"></td>
+                    <td>{{column.relationId}} </td>
+                    <td><img [src]="column.bgImage" [alt]="column.targetId" /> {{column.targetId}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+
+      </div>
+    </div>
+  </div>
+  <div class="pro-btn-group scrollbar" [class.active]="activeIndex ==3">
+
+    <div class="profile-card-main ">
+      <div class="accordion-main">
+        <mat-accordion class="mat-accordion-custom">
+          <mat-expansion-panel [(expanded)]="Edetails">
+            <mat-expansion-panel-header>
+              <mat-panel-title> <img src="./assets/image/icon/edges-right-tab-icon.svg"> Details </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="accordion-body  ">
+              <img src="./assets/image/icon/mentions-ico.png">
+              <button mat-stroked-button class="btn-custom"> {{selectedEdgeItem[0]?.data.id}}</button>
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+        <mat-accordion class="mat-accordion-custom">
+          <mat-expansion-panel [(expanded)]="Eflows">
+            <mat-expansion-panel-header>
+              <mat-panel-title> <img src="./assets/image/icon/edges-right-tab-icon.svg"> Flows </mat-panel-title>
+
+            </mat-expansion-panel-header>
+            <div class="accordion-body  ">
+              <div class="text-center">
+                <span><img src="./assets/image/icon/doc.svg">{{grphservice.sourceNode}}</span>
+                <span class="arrow-right"><img src="./assets/image/icon/arrow-right.svg" /></span>
+                <span class="arrow-right"><img src="./assets/image/icon/user-icon.svg">{{grphservice.targetNode}}</span>
+              </div>
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+        <mat-accordion class="mat-accordion-custom">
+          <mat-expansion-panel [(expanded)]="Epropertes">
+            <mat-expansion-panel-header>
+              <mat-panel-title> <img src="./assets/image/icon/edges-right-tab-icon.svg"> propertes </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="accordion-body  ">
+              <p class="text-center">No data to display</p>
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </div>
+    </div>
+  </div>
+  <div class="pro-btn-group scrollbar" [class.active]="activeIndex ==4">
+
+    <div class="profile-card-main ">
+      <div class="accordion-main">
+
+   <mat-accordion class="mat-accordion-custom" *ngFor="let recipient of dataMap | keyvalue">
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title> <img src="./assets/image/icon/histograms-right-tab-icon.svg">
+                <span class="notification-icon">{{histogramFilterCountMap.get(recipient.key)}}</span> {{recipient.key}}
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="accordion-body   table-custom">
+            <table class="table table-bordered ">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Property </th>
+                    <th scope="col"> Count</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let column of recipient.value">
+                    <td>
+                      <i class="fa fa-file-users"></i><input name="check"
+                        (change)="nodeSelectionHistogram($event,column.property,column.data,column.filterType,recipient.key)"
+                        type="checkbox"></td>
+
+                    <td>
+                      {{column.data}}
+                    </td>
+                    <td>
+
+
+                      <div class="progress progress-custom">
+                        <div class="progress-bar" [style.width]="column.barFillPercent"></div>
+                        <div class="progress-value">{{column.count}}</div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+
+      </div>
+    </div>
+  </div>
+</div>

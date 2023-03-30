@@ -1,0 +1,26 @@
+<div class="main_body_wrapper">
+  <app-navigation-ui></app-navigation-ui>
+  <div class="graph_holder">
+    <mat-tab-group [(selectedIndex)]="selected" (selectedIndexChange)="showRequestedChart($event)">
+      <mat-tab *ngFor="let tab of this.grphservice.tabs; let index = index">
+        <ng-template mat-tab-label>
+          <div class="col" style="margin-left: 20px;">{{tab}}</div>
+          <button [hidden]="tab == 'Main'" style="color:black" mat-icon-button (click)="removeTab(index)">
+            <mat-icon>close</mat-icon>
+          </button>
+        </ng-template>
+        <!-- <div class="dynamic_chart" id="cy{{index}}"></div>      -->
+        <app-graph  [cyIndex]="index"></app-graph>
+      </mat-tab>
+      <mat-tab disabled>
+        <ng-template mat-tab-label>
+          <button mat-icon-button (click)="addTab()">
+            <mat-icon>add</mat-icon>
+          </button>
+        </ng-template>
+      </mat-tab>
+    </mat-tab-group>
+    <app-range-slider></app-range-slider>
+  </div>
+  <app-right-tabs-nav></app-right-tabs-nav>
+</div>

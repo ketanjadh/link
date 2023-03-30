@@ -1,0 +1,1097 @@
+{
+"data":[
+    {
+        "data": {
+          "id": "N01",         
+          "name": "PCNA",
+          "label":"user1"           
+        },
+        "position": {"x": 481.01,"y": 384.82},
+        "group": "nodes",          
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": "fn10273"
+      },{
+        "data": {
+          "id": "N02",                 
+          "name": "FEN1",
+          "label":"user1"         
+        },
+        "position": {
+          "x": 531.9740635094307,
+          "y": 464.8210898234145
+        },
+        "group": "nodes",        
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": "fn10273"
+      }, {
+        "data": {
+          "id": "N03",         
+          "name": "RAD9A",
+          "label":"user1" 
+         
+        },
+        "position": {
+          "x": 455.8128125018193,
+          "y": 555.4591537139819
+        },
+        "group": "nodes",
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": "fn6935"
+      },{
+        "data": {
+          "id": "N04",              
+          "name": "RAD9B",
+          "label":"user1" 
+        },
+        "position": {
+          "x": 363.1144068403203,
+          "y": 515.7352912086707
+        },
+        "group": "nodes",       
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": "fn6935"
+      }, {
+        "data": {
+          "id": "N05",         
+          "name": "APEX2",
+          "label":"user1" 
+        },
+        "position": {
+          "x": 689.1927803956215,
+          "y": 634.0100611862405
+        },
+        "group": "nodes",       
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "id": "N06",            
+          "name": "POLD3",
+          "label":"user1" 
+        },
+        "position": {
+          "x": 118.3562364528364,
+          "y": 384.3877516879044
+        },
+        "group": "nodes",        
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": "fn10273 fn6944 fn9471"
+      }, {
+        "data": {
+          "id": "N07",                
+          "name": "RAD51",
+          "label":"user1" 
+        },
+        "position": {
+          "x": 759.7017646483837,
+          "y": 338.3207127700095
+        },
+        "group": "nodes",      
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": "fn6931 fn9632 fn7950 fn9188"
+      }, {
+        "data": {
+          "id": "N08",                 
+          "name": "LIG1",
+          "label":"user1"          
+        },
+        "position": {
+          "x": 264.10227893804523,
+          "y": 631.7198779917306
+        },
+        "group": "nodes",        
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": "fn10273 fn6944 fn9471 fn6956 fn6935"
+      }, {
+        "data": {
+          "id": "N09",        
+          "name": "RFC5",
+          "label":"user1" 
+        },
+        "position": {
+          "x": 282.21587939790476,
+          "y": 109.57476207336902
+        },
+        "group": "nodes",        
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": "fn9471 fn6956 fn6935 fn8147 fn6939 fn6936 fn6957"
+      },{
+        "data": {
+          "id": "N10",                    
+          "name": "RFC4",
+          "label":"user2" 
+        },
+        "position": {
+          "x": 205.41323994659498,
+          "y": 122.2715768040765
+        },
+        "group": "nodes",        
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": "fn9471 fn6956 fn6935 fn8147 fn6939 fn6936"
+      }, {
+        "data": {
+          "id": "N11",                   
+          "name": "GADD45G",
+          "label":"user2"
+        },
+        "position": {
+          "x": 335.2681018951896,
+          "y": 398.62289259289554
+        },
+        "group": "nodes",
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "id": "N12",              
+          "name": "RFC2",
+          "label":"user2"
+        },
+        "position": {
+          "x": 422.6986944382589,
+          "y": 59.422072599905285
+        },
+        "group": "nodes",        
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": "fn6279 fn6278 fn8569 fn7641 fn8568 fn6943"
+      }, {
+        "data": {
+          "id": "N13",                    
+          "name": "MSH6",
+          "label":"user2"
+        },
+        "position": {
+          "x": 524.5786092800173,
+          "y": 313.6721385565813
+        },
+        "group": "nodes",        
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": "fn7467 fn10022 fn7495 fn7500 fn7463 fn7464 fn9361"
+      }, {
+        "data": {
+          "id": "N14",                 
+          "name": "RFC3",
+          "label":"user2"
+        },
+        "position": {
+          "x": 192.72587571240607,
+          "y": 30.601237157877808
+        },
+        "group": "nodes",        
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": "fn6811 fn7463 fn7464 fn6279 fn6278 fn8569 fn7641 fn8568 fn6943"
+      }, {
+        "data": {
+          "id": "N15",                 
+          "name": "UNG",
+          "label":"user2"
+        },
+        "position": {
+          "x": 497.37919617137817,
+          "y": 693.0523864227225
+        },
+        "group": "nodes",       
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": "fn8023 fn7928"
+      }, {
+        "data": {
+          "id": "N16",            
+          "name": "RFC1",
+          "label":"user3"
+        },
+        "position": {
+          "x": 381.8836285591501,
+          "y": 194.7788667091606
+        },
+        "group": "nodes",        
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": "fn6811 fn6279 fn6278 fn8569 fn7641 fn8568 fn6943"
+      }, {
+        "data": {
+          "id": "N17",                   
+          "name": "BABAM1",
+          "label":"user3"
+        },
+        "position": {
+          "x": 633.9447667877506,
+          "y": 217.35373723375224
+        },
+        "group": "nodes",        
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": "fn6949 fn10024 fn10022 fn7552 fn7495"
+      }, {
+        "data": {
+          "id": "N18",                 
+          "name": "POLD1",
+          "label":"user3"
+        },
+        "position": {
+          "x": 91.6808784584024,
+          "y": 252.85442763278502
+        },
+        "group": "nodes",        
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": "fn9367 fn9368 fn6676 fn10713 fn6945 fn6946 fn7921 fn6811 fn8380 fn7495 fn7500 fn6279 fn6278 fn8569 fn7641 fn8568 fn6943"
+      }, {
+        "data": {
+          "id": "N19",          
+          "name": "POLR3K",
+          "label":"user3"
+        },
+        "position": {
+          "x": 905.3802465599952,
+          "y": 493.3679393218726
+        },
+        "group": "nodes",        
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": "fn7921"
+      }, {
+        "data": {
+          "id": "N20",              
+          "name": "PPP1CA",
+          "label":"user3"
+        },
+        "position": {
+          "x": 621.2170159338846,
+          "y": 407.11437177468383
+        },
+        "group": "nodes",        
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "id": "N21",          
+          "name": "DNA2",
+          "label":"user3"
+        },
+        "position": {
+          "x": 912.8425638686975,
+          "y": 11.53856391494864
+        },
+        "group": "nodes",       
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": "fn10022 fn7463 fn7464 fn6279 fn6278 fn8569 fn7641 fn8568"
+      },{
+        "data": {
+          "source": "N02",
+          "target": "N21",
+          "weight": 0.0055478187,
+          "group": "coexp",
+          "networkId": 1133,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 2,
+          "id": "e0"
+        },
+        "position": {},
+        "group": "edges",
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "source": "N08",
+          "target": "N06",
+          "weight": 0.012590342,
+          "group": "coexp",
+          "networkId": 1133,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 3,
+          "id": "e1"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      },{
+        "data": {
+          "source": "N09",
+          "target": "N01",
+          "weight": 0.0089772185,
+          "group": "coexp",
+          "networkId": 1133,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 4,
+          "id": "e2"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      },{
+        "data": {
+          "source": "N01",
+          "target": "N08",
+          "weight": 0.0055292076,
+          "group": "coexp",
+          "networkId": 1133,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 5,
+          "id": "e3"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "source": "N05",
+          "target": "N15",
+          "weight": 0.005184464,
+          "group": "coexp",
+          "networkId": 1133,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 6,
+          "id": "e4"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "source": "N11",
+          "target": "N16",
+          "weight": 0.008174375,
+          "group": "coexp",
+          "networkId": 1133,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 7,
+          "id": "e5"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "source": "N03",
+          "target": "N07",
+          "weight": 0.0073378147,
+          "group": "coexp",
+          "networkId": 1133,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 8,
+          "id": "e6"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "source": "N09",
+          "target": "N14",
+          "weight": 0.010978148,
+          "group": "coexp",
+          "networkId": 1133,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 9,
+          "id": "e7"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "source": "N17",
+          "target": "N04",
+          "weight": 0.009477927,
+          "group": "coexp",
+          "networkId": 1133,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 10,
+          "id": "e8"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "source": "N09",
+          "target": "N08",
+          "weight": 0.009086159,
+          "group": "coexp",
+          "networkId": 1133,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 11,
+          "id": "e9"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "source": "N10",
+          "target": "N09",
+          "weight": 0.008661902,
+          "group": "coexp",
+          "networkId": 1133,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 12,
+          "id": "e10"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "source": "N08",
+          "target": "N10",
+          "weight": 0.0050190594,
+          "group": "coexp",
+          "networkId": 1133,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 13,
+          "id": "e11"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "source": "N10",
+          "target": "N08",
+          "weight": 0.00814378,
+          "group": "coexp",
+          "networkId": 1133,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 14,
+          "id": "e12"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "source": "N12",
+          "target": "N05",
+          "weight": 0.0065156803,
+          "group": "coexp",
+          "networkId": 1133,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 15,
+          "id": "e13"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "source": "N02",
+          "target": "N20",
+          "weight": 0.0066020666,
+          "group": "coexp",
+          "networkId": 1133,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 16,
+          "id": "e14"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "source": "N12",
+          "target": "N20",
+          "weight": 0.0030451824,
+          "group": "coexp",
+          "networkId": 1133,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 17,
+          "id": "e15"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "source": "N03",
+          "target": "N15",
+          "weight": 0.0069189603,
+          "group": "coexp",
+          "networkId": 1133,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 18,
+          "id": "e16"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "source": "N19",
+          "target": "N21",
+          "weight": 0.007888168,
+          "group": "coexp",
+          "networkId": 1133,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 19,
+          "id": "e17"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "source": "N03",
+          "target": "N12",
+          "weight": 0.0066891047,
+          "group": "coexp",
+          "networkId": 1133,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 20,
+          "id": "e18"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "source": "N18",
+          "target": "N08",
+          "weight": 0.006453997,
+          "group": "coexp",
+          "networkId": 1133,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 21,
+          "id": "e19"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "source": "N16",
+          "target": "N09",
+          "weight": 0.013474658,
+          "group": "coexp",
+          "networkId": 1133,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 22,
+          "id": "e20"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "source": "N10",
+          "target": "N04",
+          "weight": 0.010655156,
+          "group": "coexp",
+          "networkId": 1228,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 23,
+          "id": "e21"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "source": "N11",
+          "target": "N06",
+          "weight": 0.02157121,
+          "group": "coexp",
+          "networkId": 1228,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 24,
+          "id": "e22"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "source": "N07",
+          "target": "N17",
+          "weight": 0.01614795,
+          "group": "coexp",
+          "networkId": 1228,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 25,
+          "id": "e23"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "source": "N13",
+          "target": "N16",
+          "weight": 0.011872302,
+          "group": "coexp",
+          "networkId": 1094,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 26,
+          "id": "e24"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "source": "N13",
+          "target": "N02",
+          "weight": 0.013897292,
+          "group": "coexp",
+          "networkId": 1094,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 27,
+          "id": "e25"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "source": "N07",
+          "target": "N21",
+          "weight": 0.014308085,
+          "group": "coexp",
+          "networkId": 1094,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 28,
+          "id": "e26"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "source": "N10",
+          "target": "N06",
+          "weight": 0.01631634,
+          "group": "coexp",
+          "networkId": 1094,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 29,
+          "id": "e27"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }, {
+        "data": {
+          "source": "N05",
+          "target": "N15",
+          "weight": 0.01631634,
+          "group": "coexp",
+          "networkId": 1094,
+          "networkGroupId": 18,
+          "intn": true,
+          "rIntnId": 29,
+          "id": "e28"
+        },
+        "position": {},
+        "group": "edges",
+        "removed": false,
+        "selected": false,
+        "selectable": true,
+        "locked": false,
+        "grabbed": false,
+        "grabbable": true,
+        "classes": ""
+      }
+],
+"style":[
+  {
+    "selector": "node",
+    "style": {
+      "content": "data(id)",
+      "font-size": 16,
+      "background-color": "#ffc7a7",
+      "border-width": "2px",
+      "border-color":"#000",
+      "border-opacity":"0.1",
+      "shape": "ellipse",
+      "background-image":"./assets/image/flag.svg",
+      "background-repeat":"no-repeat",
+      "background-position-x":"5px",
+      "background-position-y":"5px",
+      "background-width":"30px",
+      "background-height":"30px"
+    }
+  },{
+    "selector": "edge",
+    "style": {
+      "curve-style": "straight",
+      "haystack-radius":0,
+      "width":2,
+      "opacity": 0.5,
+      "line-color": "orange",
+      "target-arrow-color":"#FF8C00",
+      "target-arrow-shape":"triangle-backcurve"       
+    }
+  },{
+    "selector": "node:selected",
+    "style": {
+      "border-width": "6px",
+      "border-color": "#AAD8FF",
+      "border-opacity": "0.5",
+      "background-color": "#77828C",
+      "text-outline-color": "#77828C"
+    }
+  },{
+    "selector": "node.outgoers",
+    "style": {
+        "background-color": "#d10a67",         
+        "border-width": "3px",
+        "border-color":"#000",
+        "border-opacity":"0.4",
+        "color":"#d10a67"           
+    }
+  },{
+    "selector": "edge.outgoers",
+    "style": {
+      "opacity": "0.9",
+      "line-color": "#d10a67",
+      "target-arrow-color":"#d10a67"       
+     }
+   },{
+    "selector": "node.incomers",
+    "style": {
+        "background-color": "#640032",         
+        "border-width": "3px",
+        "border-color":"#000",
+        "border-opacity":"0.4",
+        "color":"#640032"
+    }
+  },{
+    "selector": "edge.incomers",
+    "style": {
+      "opacity": "0.9",
+      "line-color": "#640032",
+      "target-arrow-color":"#640032" 
+     }
+   },{
+  "selector": "node.hoverdNode",
+  "style": {
+        "background-color": "#dd5496",                    
+        "border-width": "3px",
+        "border-color":"#000",
+        "border-opacity":"0.4"
+   }
+ },{
+  "selector": "edge.highlighted",
+  "style": {
+    "opacity": "0.1",
+    "line-color": "#f00"
+   }
+ },{
+  "selector": "node.deg_1",
+  "style": {        
+   "width": "10%",
+   "height": "10%"
+  }
+},{
+  "selector": "node.deg_2",
+  "style": {
+    "width": "20%",
+    "height": "20%"
+  }
+},{
+  "selector": "node.deg_3",
+  "style": {
+    "width": "30%",
+     "height": "30%"
+  }
+},{
+  "selector": "node.deg_4",
+  "style": {
+     "width": "40%",
+      "height": "40%"
+  }
+},{
+  "selector": "node.deg_5",
+  "style": {
+     "width": "50%",
+      "height": "50%"
+  }
+},{
+  "selector": "node.deg_6",
+  "style": {
+    "width": "60%",
+     "height": "60%"
+  }
+},{
+"selector": "node.leavesNodes",
+    "style": {
+        "background-color": "#760ba8",        
+        "border-color":"#823ea2",         
+        "color":"#760ba8"           
+    }
+}
+]
+}

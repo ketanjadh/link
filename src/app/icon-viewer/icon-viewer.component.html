@@ -1,0 +1,32 @@
+<div class="modal-content">
+  <div class="modal-header mb0">
+    <h4 class="modal-title">CHOOSE IMAGE </h4>
+    <button mat-dialog-close cdkFocusInitial class="close-btn">&times;</button>
+  </div>
+  <div class="modal-body">
+
+    <div class="icon-search-row">
+      <form class="form-inline ">
+        <input type="search" #searchVal (keyup.enter)="searchIcon(searchVal)" placeholder="Search icon"
+          class="form-control mr-sm-1 col-10">
+        <button (click)="searchIcon(searchVal)" type="button" class="btn btn-success ">Search</button>
+      </form>
+    </div>
+
+    <div class="icon-col-main scrollbar ">
+      <ng-container *ngFor="let imagePath of grphservice.nodeRuleIconList; let i = index">
+        <div class="icon-col" [class.active-icon]="selectedIcon == i" (click)="selectImageIcon(imagePath, i)">
+          <div class="checked-icon"></div>
+          <mat-icon> <img src={{imagePath}} class="center"> </mat-icon>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <div class="float-right">
+      <button class="btn btn-primary mr-1  btn-custom" [disabled]="selectedIcon== null" mat-dialog-close
+        cdkFocusInitial>Add Image</button>
+      <button (click)="reset()" class="btn btn-default  mr-1  btn-custom">Cancel</button>
+    </div>
+  </div>
+</div>

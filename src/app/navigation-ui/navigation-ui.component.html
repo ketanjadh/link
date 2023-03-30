@@ -1,0 +1,400 @@
+<div class="CenterMenuPanel">
+  <div class="row">
+    <div class="col-8 p0">
+      <div class="form-group has-search "> <span class="fa fa-search form-control-feedback"></span>
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+    </div>
+    <ul class="col-4">
+      <li>
+        <button mat-button mat-mini-fab [matMenuTriggerFor]="NodeMenu"> <img src="./assets/image/icon/node-icon.svg">
+        </button>
+        <mat-menu #NodeMenu="matMenu" class="dropdown-menu-Center-list scrollbar">
+          <button mat-menu-item [matMenuTriggerFor]="nodeBgColor"><img src="./assets/image/icon/color-icon.svg">Node BG
+            Color</button>
+          <button mat-menu-item [matMenuTriggerFor]="nodeSize"><img src="./assets/image/icon/node-size.svg">Node
+            Size</button>
+          <button mat-menu-item [matMenuTriggerFor]="nodeShape"><img src="./assets/image/icon/node-shape-icon.svg">Node
+            Shape</button>
+          <button mat-menu-item [matMenuTriggerFor]="nodeBorderWidth"><img
+              src="./assets/image/icon/node-boder-icon.svg">Node Border Width</button>
+          <button mat-menu-item (click)="changeNodeImage()" ><img src="./assets/image/icon/change-node-image-icon.svg">Change Node Image</button>
+        </mat-menu>
+        <mat-menu #nodeBgColor="matMenu" class="dropdown-menu-second-list scrollbar">
+          <button mat-menu-item (click)="updatePropery('node', 'background-color:red')"><img
+              src="./assets/image/icon/red-icon.svg">Red</button>
+          <button mat-menu-item (click)="updatePropery('node', 'background-color:maroon')"><img
+              src="./assets/image/icon/maroon-icon.svg">Maroon</button>
+          <button mat-menu-item (click)="updatePropery('node', 'background-color:yellow')"><img
+              src="./assets/image/icon/yellow-icon.svg">Yellow</button>
+          <button mat-menu-item (click)="updatePropery('node', 'background-color:olive')"><img
+              src="./assets/image/icon/olive-icon.svg">Olive</button>
+          <button mat-menu-item (click)="updatePropery('node', 'background-color:lime')"><img
+              src="./assets/image/icon/lime-icon.svg">Lime</button>
+          <button mat-menu-item (click)="updatePropery('node', 'background-color:green')"><img
+              src="./assets/image/icon/green-icon.svg">Green</button>
+          <button mat-menu-item (click)="updatePropery('node', 'background-color:aqua')"><img
+              src="./assets/image/icon/aqua-icon.svg">Aqua</button>
+          <button mat-menu-item (click)="updatePropery('node', 'background-color:teal')"><img
+              src="./assets/image/icon/teal-icon.svg">Teal</button>
+          <button mat-menu-item (click)="updatePropery('node', 'background-color:blue')"><img
+              src="./assets/image/icon/blue-icon.svg">Blue</button>
+          <button mat-menu-item (click)="updatePropery('node', 'background-color:navy')"><img
+              src="./assets/image/icon/navy-icon.svg">Navy</button>
+          <button mat-menu-item (click)="updatePropery('node', 'background-color:fuchsia')"><img
+              src="./assets/image/icon/fuchsia-icon.svg">Fuchsia</button>
+          <button mat-menu-item (click)="updatePropery('node', 'background-color:purple')"><img
+              src="./assets/image/icon/purple-icon.svg">Purple</button>
+          <button mat-menu-item (click)="updatePropery('node', 'background-color:black')"><img
+              src="./assets/image/icon/black-icon.svg">Black</button>
+          <button mat-menu-item (click)="updatePropery('node', 'background-color:gray')"><img
+              src="./assets/image/icon/gray-icon.svg">Gray</button>
+          <button mat-menu-item (click)="updatePropery('node', 'background-color:silver')"><img
+              src="./assets/image/icon/silver-icon.svg">Silver</button>
+        </mat-menu>
+        <mat-menu #nodeSize="matMenu" class="dropdown-menu-second-list scrollbar">
+          <button mat-menu-item (click)="updatePropery('node', 'width:10%','height:10%')">10%</button>
+          <button mat-menu-item (click)="updatePropery('node', 'width:20%','height:20%')">20%</button>
+          <button mat-menu-item (click)="updatePropery('node', 'width:30%','height:30%')">30%</button>
+          <button mat-menu-item (click)="updatePropery('node', 'width:40%','height:40%')">40%</button>
+          <button mat-menu-item (click)="updatePropery('node', 'width:50%','height:50%')">50%</button>
+          <button mat-menu-item (click)="updatePropery('node', 'width:60%','height:60%')">60%</button>
+          <button mat-menu-item (click)="updatePropery('node', 'width:70%','height:70%')">70%</button>
+          <button mat-menu-item (click)="updatePropery('node', 'width:80%','height:80%')">80%</button>
+          <button mat-menu-item (click)="updatePropery('node', 'width:90%','height:90%')">90%</button>
+          <button mat-menu-item (click)="updatePropery('node', 'width:100%','height:100%')">100%</button>
+        </mat-menu>
+        <mat-menu #nodeShape="matMenu" class="dropdown-menu-second-list scrollbar">
+          <button mat-menu-item (click)="updatePropery('node', 'shape:ellipse')"><img
+              src="./assets/image/icon/ellipse-icon.svg">Ellipse</button>
+          <button mat-menu-item (click)="updatePropery('node', 'shape:rectangle')"><img
+              src="./assets/image/icon/rectangle-icon.svg">Rectangle</button>
+          <button mat-menu-item (click)="updatePropery('node', 'shape:round-rectangle')"><img
+              src="./assets/image/icon/round-rectangle-icon.svg">Round Rectangle</button>
+          <button mat-menu-item (click)="updatePropery('node', 'shape:cut-rectangle')"><img
+              src="./assets/image/icon/cut-rectangle-icon.svg">Cut Rectangle</button>
+          <button mat-menu-item (click)="updatePropery('node', 'shape:rhomboid')"><img
+              src="./assets/image/icon/rhomboid-icon.svg">Rhomboid</button>
+          <button mat-menu-item (click)="updatePropery('node', 'shape:star')"><img
+              src="./assets/image/icon/star-icon.svg">Star</button>
+          <button mat-menu-item (click)="updatePropery('node', 'shape:triangle')"><img
+              src="./assets/image/icon/triangle.svg">Triangle</button>
+          <button mat-menu-item (click)="updatePropery('node', 'shape:round-triangle')"><img
+              src="./assets/image/icon/round-triangle.svg">Round Triangle</button>
+          <button mat-menu-item (click)="updatePropery('node', 'shape:diamond')"><img
+              src="./assets/image/icon/diamond-icon.svg">Diamond</button>
+          <button mat-menu-item (click)="updatePropery('node', 'shape:round-diamond')"><img
+              src="./assets/image/icon/round-diamond.svg">Round Diamond</button>
+          <button mat-menu-item (click)="updatePropery('node', 'shape:pentagon')"><img
+              src="./assets/image/icon/pentagon-icon.svg">Pentagon</button>
+          <button mat-menu-item (click)="updatePropery('node', 'shape:round-pentagon')"><img
+              src="./assets/image/icon/round-pentagon-icon.svg">Round Pentagon</button>
+          <button mat-menu-item (click)="updatePropery('node', 'shape:hexagon')"><img
+              src="./assets/image/icon/hexagon-icon.svg">Hexagon</button>
+          <button mat-menu-item (click)="updatePropery('node', 'shape:round-hexagon')"><img
+              src="./assets/image/icon/round-hexagon-icon.svg">Round Hexagon</button>
+          <button mat-menu-item (click)="updatePropery('node', 'shape:octagon')"><img
+              src="./assets/image/icon/octagon-icon.svg">Octagon</button>
+          <button mat-menu-item (click)="updatePropery('node', 'shape:tag')"><img
+              src="./assets/image/icon/tag-icon.svg">Tag</button>
+          <button mat-menu-item (click)="updatePropery('node', 'shape:round-tag')"><img
+              src="./assets/image/icon/round-tag-icon.svg">Round Tag</button>
+          <button mat-menu-item (click)="updatePropery('node', 'shape:vee')"><img
+              src="./assets/image/icon/vee-icon.svg">Vee</button>
+        </mat-menu>
+        <mat-menu #nodeBorderWidth="matMenu" class="dropdown-menu-second-list scrollbar">
+          <button mat-menu-item (click)="updatePropery('node', 'border-width:0')"><img
+              src="./assets/image/icon/none-icon.svg">None</button>
+          <button mat-menu-item (click)="updatePropery('node', 'border-width:1')"><img
+              src="./assets/image/icon/thin-icon.svg">Thin</button>
+          <button mat-menu-item (click)="updatePropery('node', 'border-width:2')"><img
+              src="./assets/image/icon/normal-icon.svg">Normal</button>
+          <button mat-menu-item (click)="updatePropery('node', 'border-width:4')"><img
+              src="./assets/image/icon/medium-icon.svg">Medium</button>
+          <button mat-menu-item (click)="updatePropery('node', 'border-width:6')"><img
+              src="./assets/image/icon/thik-icon.svg">Thik</button>
+          <button mat-menu-item (click)="updatePropery('node', 'border-width:10')"><img
+              src="./assets/image/icon/extra-thik-icon.svg">Extra-Thik</button>
+        </mat-menu>
+      </li>
+      <li>
+        <button mat-button mat-mini-fab [matMenuTriggerFor]="EdgeMenu"> <img src="./assets/image/icon/edge-icon.svg">
+        </button>
+        <mat-menu #EdgeMenu="matMenu" class="dropdown-menu-Center-list scrollbar">
+          <button mat-menu-item [matMenuTriggerFor]="arrowStyle"><img src="./assets/image/icon/edge-arrow-style-icon.svg">Edge Arrow Style</button>
+          <button mat-menu-item [matMenuTriggerFor]="edgeColor"><img src="./assets/image/icon/edge-color-icon.svg">Edge Color</button>
+          <button mat-menu-item [matMenuTriggerFor]="edgeType"><img src="./assets/image/icon/edge-type.svg">Edge Type</button>
+          <button mat-menu-item [matMenuTriggerFor]="edgeWidth"><img src="./assets/image/icon/edge-width.svg">Edge Width</button>
+        </mat-menu>
+        <mat-menu #arrowStyle="matMenu" class="dropdown-menu-second-list scrollbar">
+          <button mat-menu-item (click)="updatePropery('edge', 'target-arrow-shape:triangle')"><img src="./assets/image/icon/triangle.svg">Triangle</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'target-arrow-shape:triangle-tee')"><img src="./assets/image/icon/triangle-tree.svg">Triangle tee</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'target-arrow-shape:circle-triangle')"><img src="./assets/image/icon/circle-triangle.svg">Circle Triangle</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'target-arrow-shape:triangle-cross')"><img src="./assets/image/icon/triangle-cross-icon.svg">Triangle Cross</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'target-arrow-shape:triangle-backcurve')"><img src="./assets/image/icon/triangle-backcurve-icon.svg">Triangle Backcurve</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'target-arrow-shape:vee')"><img src="./assets/image/icon/vee-icon.svg">Vee</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'target-arrow-shape:tee')"><img src="./assets/image/icon/tee-icon.svg">Tee</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'target-arrow-shape:square')"><img src="./assets/image/icon/square-icon.svg">Square</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'target-arrow-shape:circle')"><img src="./assets/image/icon/circle-icon.svg">Circle</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'target-arrow-shape:diamond')"><img src="./assets/image/icon/diamond-icon.svg">Diamond</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'target-arrow-shape:chevron')"><img src="./assets/image/icon/chevron-icon.svg">Chevron</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'target-arrow-shape:none')"><img src="./assets/image/icon/none-icon.svg">None</button>
+        </mat-menu>
+        <mat-menu #edgeColor="matMenu" class="dropdown-menu-second-list scrollbar">
+          <button mat-menu-item (click)="updatePropery('edge', 'line-color:red')"><img src="./assets/image/icon/red-icon.svg">Red</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'line-color:maroon')"><img src="./assets/image/icon/maroon-icon.svg">Maroon</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'line-color:yellow')"><img src="./assets/image/icon/yellow-icon.svg">Yellow</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'line-color:olive')"><img src="./assets/image/icon/olive-icon.svg">Olive</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'line-color:lime')"><img src="./assets/image/icon/lime-icon.svg">Lime</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'line-color:green')"><img src="./assets/image/icon/green-icon.svg">Green</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'line-color:aqua')"><img src="./assets/image/icon/aqua-icon.svg">Aqua</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'line-color:teal')"><img src="./assets/image/icon/teal-icon.svg">Teal</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'line-color:blue')"><img src="./assets/image/icon/blue-icon.svg">Blue</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'line-color:navy')"><img src="./assets/image/icon/navy-icon.svg">Navy</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'line-color:fuchsia')"><img src="./assets/image/icon/fuchsia-icon.svg">Fuchsia</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'line-color:purple')"><img src="./assets/image/icon/purple-icon.svg">Purple</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'line-color:black')"><img src="./assets/image/icon/black-icon.svg">Black</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'line-color:gray')"><img src="./assets/image/icon/gray-icon.svg">Gray</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'line-color:silver')"><img src="./assets/image/icon/silver-icon.svg">Silver</button>
+        </mat-menu>
+        <mat-menu #edgeType="matMenu" class="dropdown-menu-second-list scrollbar">
+          <button mat-menu-item (click)="updatePropery('edge', 'curve-style:bezier')"><img
+              src="./assets/image/icon/bezier-icon.svg">Bezier</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'curve-style:straight')"><img
+              src="./assets/image/icon/straight-icon.svg">Straight</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'curve-style:unbundled-bezier')"><img
+              src="./assets/image/icon/unbundled-bezier.svg">Unbundled Bezier</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'curve-style:haystack')"><img
+              src="./assets/image/icon/haystack-icon.svg">Haystack</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'curve-style:segments')"><img
+              src="./assets/image/icon/segments-icon.svg">Segments</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'curve-style:taxi')"><img
+              src="./assets/image/icon/taxi-icon.svg">Taxi</button>
+        </mat-menu>
+        <mat-menu #edgeWidth="matMenu" class="dropdown-menu-second-list scrollbar">
+          <button mat-menu-item (click)="updatePropery('edge', 'width:0')"><img src="./assets/image/icon/none-icon.svg">None</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'width:1')"><img src="./assets/image/icon/thin-icon.svg">Thin</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'width:2')"><img src="./assets/image/icon/normal-icon.svg">Normal</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'width:4')"><img src="./assets/image/icon/medium-icon.svg">Medium</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'width:6')"><img src="./assets/image/icon/thik-icon.svg">Thik</button>
+          <button mat-menu-item (click)="updatePropery('edge', 'width:10')"><img src="./assets/image/icon/extra-thik-icon.svg">Extra-Thik</button>
+        </mat-menu>
+      </li>
+      <li>
+        <button mat-button mat-mini-fab [matMenuTriggerFor]="fontsProp"><img src="./assets/image/icon/font-icon.svg"></button>
+        <mat-menu #fontsProp="matMenu" class="dropdown-menu-Center-list scrollbar">
+          <button mat-menu-item [matMenuTriggerFor]="fontFamily"><img src="./assets/image/icon/font-family-icon.svg">Font Family</button>
+          <button mat-menu-item [matMenuTriggerFor]="fontColor"><img src="./assets/image/icon/font-icon-color.svg">Font Color</button>
+          <button mat-menu-item [matMenuTriggerFor]="fontSize"><img src="./assets/image/icon/font-size-color.svg">Font Size</button>
+          <button mat-menu-item [matMenuTriggerFor]="fontStyle"><img src="./assets/image/icon/font-style-icon.svg">Font Style</button>
+          <button mat-menu-item [matMenuTriggerFor]="fontWeight"><img src="./assets/image/icon/font-style-icon.svg">Font Weight</button>
+        </mat-menu>
+        <mat-menu #fontFamily="matMenu" class="dropdown-menu-second-list scrollbar">
+          <button mat-menu-item (click)="updatePropery('node', 'font-family:Roboto')">Roboto</button>
+          <button mat-menu-item (click)="updatePropery('node', 'font-family:Open Sans')">Open Sans</button>
+        </mat-menu>
+        <mat-menu #fontColor="matMenu" class="dropdown-menu-second-list scrollbar">
+          <button mat-menu-item (click)="updatePropery('node', 'color:red')"><img src="./assets/image/icon/red-icon.svg">Red</button>
+          <button mat-menu-item (click)="updatePropery('node', 'color:maroon')"><img src="./assets/image/icon/maroon-icon.svg">Maroon</button>
+          <button mat-menu-item (click)="updatePropery('node', 'color:yellow')"><img src="./assets/image/icon/yellow-icon.svg">Yellow</button>
+          <button mat-menu-item (click)="updatePropery('node', 'color:olive')"><img src="./assets/image/icon/olive-icon.svg">Olive</button>
+          <button mat-menu-item (click)="updatePropery('node', 'color:lime')"><img src="./assets/image/icon/lime-icon.svg">Lime</button>
+          <button mat-menu-item (click)="updatePropery('node', 'color:green')"><img src="./assets/image/icon/green-icon.svg">Green</button>
+          <button mat-menu-item (click)="updatePropery('node', 'color:aqua')"><img src="./assets/image/icon/aqua-icon.svg">Aqua</button>
+          <button mat-menu-item (click)="updatePropery('node', 'color:teal')"><img src="./assets/image/icon/teal-icon.svg">Teal</button>
+          <button mat-menu-item (click)="updatePropery('node', 'color:blue')"><img src="./assets/image/icon/blue-icon.svg">Blue</button>
+          <button mat-menu-item (click)="updatePropery('node', 'color:navy')"><img src="./assets/image/icon/navy-icon.svg">Navy</button>
+          <button mat-menu-item (click)="updatePropery('node', 'color:fuchsia')"><img src="./assets/image/icon/fuchsia-icon.svg">Fuchsia</button>
+          <button mat-menu-item (click)="updatePropery('node', 'color:purple')"><img src="./assets/image/icon/purple-icon.svg">Purple</button>
+          <button mat-menu-item (click)="updatePropery('node', 'color:black')"><img src="./assets/image/icon/black-icon.svg">Black</button>
+          <button mat-menu-item (click)="updatePropery('node', 'color:gray')"><img src="./assets/image/icon/gray-icon.svg">Gray</button>
+          <button mat-menu-item (click)="updatePropery('node', 'color:silver')"><img src="./assets/image/icon/silver-icon.svg">Silver</button>
+        </mat-menu>
+        <mat-menu #fontSize="matMenu" class="dropdown-menu-second-list scrollbar">
+          <button mat-menu-item (click)="updatePropery('node', 'font-size:8px')">8px</button>
+          <button mat-menu-item (click)="updatePropery('node', 'font-size:10px')">10px</button>
+          <button mat-menu-item (click)="updatePropery('node', 'font-size:12px')">12px</button>
+          <button mat-menu-item (click)="updatePropery('node', 'font-size:14px')">14px</button>
+          <button mat-menu-item (click)="updatePropery('node', 'font-size:16px')">16px</button>
+          <button mat-menu-item (click)="updatePropery('node', 'font-size:18px')">18px</button>
+          <button mat-menu-item (click)="updatePropery('node', 'font-size:20px')">20px</button>
+          <button mat-menu-item (click)="updatePropery('node', 'font-size:22px')">22px</button>
+          <button mat-menu-item (click)="updatePropery('node', 'font-size:24px')">24px</button>
+          <button mat-menu-item (click)="updatePropery('node', 'font-size:28px')">28px</button>
+          <button mat-menu-item (click)="updatePropery('node', 'font-size:30px')">30px</button>
+          <button mat-menu-item>30px</button>
+        </mat-menu>
+        <mat-menu #fontStyle="matMenu" class="dropdown-menu-second-list scrollbar">
+          <button mat-menu-item (click)="updatePropery('node', 'font-style:normal')">Normal</button>         
+          <button mat-menu-item (click)="updatePropery('node', 'font-style:italic')">Italic</button>         
+          <button mat-menu-item (click)="updatePropery('node', 'font-style:oblique')">Oblique</button>         
+        </mat-menu>
+
+        <mat-menu #fontWeight="matMenu" class="dropdown-menu-second-list scrollbar">          
+          <button mat-menu-item (click)="updatePropery('node', 'font-weight:300')">Thin</button>
+          <button mat-menu-item (click)="updatePropery('node', 'font-weight:400')">Normal</button>
+          <button mat-menu-item (click)="updatePropery('node', 'font-weight:600')">Medium</button>
+          <button mat-menu-item (click)="updatePropery('node', 'font-weight:900')">Thik</button>          
+        </mat-menu>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="leftMenuPanel">
+  <nav class="navbar navbar-expand-md">
+    <div>
+      <ul class="navbar-nav">
+        <li class="dropright">
+          <button mat-button mat-mini-fab [matMenuTriggerFor]="layout"> <img src="./assets/image/icon/layout-icon.svg" > </button>
+          <mat-menu #layout="matMenu" class="dropdown-menu-first-list scrollbar">
+            <button mat-menu-item [matMenuTriggerFor]="layoutType"> <img src="./assets/image/icon/layout-type-ico.svg">Layout Type</button>
+            <button mat-menu-item (click)="layoutAnimationMode()"><img src="./assets/image/icon/disable-layout-animation-icon.svg">Layout Animation</button>
+            <button mat-menu-item (click)="showTimeline()"><img src="./assets/image/icon/disable-layout-animation-icon.svg">Show Timeline </button>
+            <button mat-menu-item (click)="restoreGraph()"><img src="./assets/image/icon/disable-layout-animation-icon.svg">Reset All </button>
+          </mat-menu>
+          <mat-menu #layoutType="matMenu" class="dropdown-menu-second-list scrollbar">
+            <button mat-menu-item (click)="changeLayout('spread')"><img src="./assets/image/icon/spread-ico.svg">Spread</button>
+            <button mat-menu-item (click)="changeLayout('concentric')"><img src="./assets/image/icon/concentric-ico.svg">Concentric</button>
+            <button mat-menu-item (click)="changeLayout('random')"><img src="./assets/image/icon/Random-ico.svg">Random</button>
+            <button mat-menu-item (click)="changeLayout('breadthfirst')"><img src="./assets/image/icon/breadth-ico.svg">Breadth First</button>
+            <button mat-menu-item (click)="changeLayout('circle')"><img src="./assets/image/icon/circle-ico.svg">Circle</button>
+            <button mat-menu-item (click)="changeLayout('cose')"><img src="./assets/image/icon/cose-ico.svg">Cose</button>
+            <button mat-menu-item (click)="changeLayout('preset')"><img src="./assets/image/icon/preset-ico.svg">Preset</button>
+            <button mat-menu-item (click)="changeLayout('fcose')"><img src="./assets/image/icon/fCose-ico.svg">fCose</button>
+            <button mat-menu-item (click)="changeLayout('cise')"><img src="./assets/image/icon/cise-ico.svg">Cise</button>
+            <button mat-menu-item (click)="changeLayout('euler')"><img src="./assets/image/icon/euler-ico.svg">Euler</button>
+            <button mat-menu-item (click)="changeLayout('klay')"><img src="./assets/image/icon/klay-ico.svg">Klay</button>
+            <button mat-menu-item (click)="changeLayout('dagre')"><img src="./assets/image/icon/dagre-ico.svg">Dagre</button>
+            <button mat-menu-item (click)="changeLayout('cola')"><img src="./assets/image/icon/cola-ico.svg">Cola</button>
+            <button mat-menu-item (click)="changeLayout('coseBilkent')"><img src="./assets/image/icon/cose-bilkent-ico.svg">Cose-Bilkent</button>
+            <button mat-menu-item (click)="changeLayout('avsdf')"><img src="./assets/image/icon/avddf-ico.svg">AVDDF</button>
+          </mat-menu>
+        </li>
+        <li>
+          <button mat-button mat-mini-fab [matMenuTriggerFor]="utilites"><img src="./assets/image/icon/utils-icon.svg"> </button>
+          <mat-menu #utilites="matMenu" class="dropdown-menu-first-list scrollbar">
+            <button mat-menu-item (click)="invertSelection()"><img src="./assets/image/icon/invert-selection-icon.svg">Invert Selection</button>
+            <button mat-menu-item (click)="resetAll()"><img src="./assets/image/icon/resetgraph-icon.svg">Reset Graph</button>
+            <button mat-menu-item (click)=" this._gs.cy[this.selected].fit()"><img src="./assets/image/icon/autofit-icon.svg">Autofit</button>
+            <button mat-menu-item (click)="onDeleteNodeMulti()"><img src="./assets/image/icon/delete-selection-icon.svg">Delete Selection</button>
+            <button [matMenuTriggerFor]="CentralMenu" mat-menu-item><img src="./assets/image/icon/central-node-icon.svg">Central Node</button>
+            <button mat-menu-item (click)="showHideNavigator()"><img src="./assets/image/icon/show-navigator-icon.svg">Show/Hide Navigator</button>
+            <button mat-menu-item (click)="openQueryDialog()"><img src="./assets/image/icon/change-node-image-icon.svg">Add Query</button>
+          </mat-menu>
+          <mat-menu #NeighboursMenu="matMenu" class="dropdown-menu-second-list scrollbar">
+            <button mat-menu-item><img src="./assets/image/icon/select-navigator-icon.svg">Select Neighbours</button>
+            <button mat-menu-item><img src="./assets/image/icon/clear-navigator-icon.svg">Clear Neighbours</button>
+            <button mat-menu-item><img src="./assets/image/icon/leaves-navigator-icon.svg">Select Leaves</button>
+          </mat-menu>
+          <mat-menu #CentralMenu="matMenu" class="dropdown-menu-second-list scrollbar">
+            <button mat-menu-item (click)="markCentralNodes()"><img src="./assets/image/icon/make-central-icon.svg">Make Central</button>
+            <button mat-menu-item (click)="showCentralNodes()" ><img src="./assets/image/icon/show-central-icon.svg">Show Central</button>
+          </mat-menu>
+        </li>
+        <li>
+          <button mat-button mat-mini-fab [matMenuTriggerFor]="subgraph"> <img src="./assets/image/icon/sub-graph-icon.svg" > </button>
+          <mat-menu #subgraph="matMenu" class="dropdown-menu-first-list scrollbar">
+            <button (click)="subGraph()" mat-menu-item><img src="./assets/image/icon/subgraph-icon.svg">Subgraph</button>
+            <button mat-menu-item (click)="_cs.Cut()"><img src="./assets/image/icon/cut-icon.svg">Cut</button>
+            <button mat-menu-item (click)="_cs.Copy()"><img src="./assets/image/icon/copy-icon.svg">Copy</button>
+            <button mat-menu-item (click)="_cs.Paste()"><img src="./assets/image/icon/paste-icon.svg">Paste</button>
+          </mat-menu>
+        </li>
+        <li>
+          <button mat-button mat-mini-fab matTooltip="Explode" matTooltipPosition="right" [matMenuTriggerFor]="expload"> <img src="./assets/image/icon/explode-icon.svg" > </button>
+          <mat-menu #expload="matMenu" class="dropdown-menu-first-list scrollbar">
+            <button mat-menu-item (click)="explodeSelected()"><img src="./assets/image/icon/explode-selected-icon.svg">Explode Selected</button>
+            <button mat-menu-item><img src="./assets/image/icon/Destination-selected-icon.svg"> Explode By Type of Destination Node</button>
+            <button mat-menu-item><img src="./assets/image/icon/relationship-icon.svg">Explode by Relationship</button>
+            <button mat-menu-item><img src="./assets/image/icon/custom-icon.svg">Custom</button>
+          </mat-menu>
+        </li>
+        <li>
+          <button mat-button mat-mini-fab matTooltip="Metrices" matTooltipPosition="right"
+            [matMenuTriggerFor]="metrices"> <img src="./assets/image/icon/metrics-icon.svg" >
+          </button>
+          <mat-menu #metrices="matMenu" class="dropdown-menu-first-list scrollbar">
+            <button mat-menu-item (click)="addDegree()"><img src="./assets/image/icon/degree-icon.svg" >Degree</button>
+              <button mat-menu-item (click)="getNodesCentrality()"><img src="./assets/image/icon/closeness-icon.svg" >Closeness</button>
+              <button mat-menu-item (click)="getNodesBetweenness()"><img src="./assets/image/icon/betweenness-icon.svg" >Betweenness</button>
+              <button mat-menu-item (click)="getNodesPageRank()"><img src="./assets/image/icon/page-rank-icon.svg" >Page Rank</button>
+          </mat-menu>
+        </li>
+        <li>
+          <button mat-button mat-mini-fab matTooltip="Save" matTooltipPosition="right" [matMenuTriggerFor]="save"> <img
+              src="./assets/image/icon/save-icon.svg" > </button>
+          <mat-menu #save="matMenu" class="dropdown-menu-first-list scrollbar">
+            <button mat-menu-item (click)="exportGraphImage()"><img src="./assets/image/icon/export-image-icon.svg" >Export as Image</button>
+            <button mat-menu-item (click)="exportGraphML()" ><img src="./assets/image/icon/export-image-graphml-icon.svg" > Export as GraphML</button>
+            <button mat-menu-item (click)="importGraphML()"><img src="./assets/image/icon/import-graphml-icon.svg" >Import GraphML</button>
+          </mat-menu>
+        </li>
+        <li>
+          <button mat-button mat-mini-fab matTooltip="Cluster" matTooltipPosition="right" [matMenuTriggerFor]="cluster">
+            <img src="./assets/image/icon/cluster-icon.svg" > </button>
+          <mat-menu #cluster="matMenu" class="dropdown-menu-first-list scrollbar">
+            <button [matMenuTriggerFor]="ClusterizeMenu" mat-menu-item>
+            <img src="./assets/image/icon/cluster-icon.svg">Cluster</button>
+            <button mat-menu-item><img src="./assets/image/icon/group-selected.svg">Group Selected</button>
+            <button mat-menu-item><img src="./assets/image/icon/group-logic-icon.svg"> Group by Logic</button>
+          </mat-menu>
+          <mat-menu #ClusterizeMenu="matMenu" class="dropdown-menu-second-list scrollbar">
+            <button mat-menu-item><img src="./assets/image/icon/clusterize-icon.svg">Clusterize</button>
+            <button mat-menu-item><img src="./assets/image/icon/Declusterize-icon.svg">Declusterize</button>
+          </mat-menu>
+        </li>
+        <li>
+          <button mat-button mat-mini-fab matTooltip="Paths" matTooltipPosition="right" [matMenuTriggerFor]="paths">
+            <img src="./assets/image/icon/path-icon.svg" > </button>
+          <mat-menu #paths="matMenu" class="dropdown-menu-first-list scrollbar">
+            <button mat-menu-item (click)="getShortestPath()"><img src="./assets/image/icon/shortest-icon.svg">Shortest
+              Path</button>
+            <button mat-menu-item (click)="selectNoOfHops()"><img src="./assets/image/icon/path-hops-icon.svg">Path by
+              Hops</button>
+            <button mat-menu-item (click)="getCircularPath()"><img
+                src="./assets/image/icon/circular-paths-icon.svg">Circular Paths</button>
+          </mat-menu>
+        </li>
+        <li>
+          <button mat-button mat-mini-fab matTooltip="Rules" matTooltipPosition="right" [matMenuTriggerFor]="rule"> <img
+              src="./assets/image/icon/Rules-icon.svg" > </button>
+          <mat-menu #rule="matMenu" class="dropdown-menu-first-list scrollbar">
+            <button mat-menu-item [matMenuTriggerFor]="NodeRulesMenu"><img src="./assets/image/icon/node-icon.svg">Node
+              Rules</button>
+            <button mat-menu-item [matMenuTriggerFor]="EdgeRulesMenu"><img src="./assets/image/icon/edge-icon.svg">Edge
+              Rules</button>
+          </mat-menu>
+          <mat-menu #NodeRulesMenu="matMenu" class="dropdown-menu-second-list scrollbar">
+            <button mat-menu-item (click)="createNodeRules()"><img
+                src="./assets/image/icon/create-node-rules-icon.svg">Create Node Rules</button>
+            <button mat-menu-item (click)="manageNodeRules()"><img src="./assets/image/icon/manage-node-rules-icon.svg">
+              Manage Node Rules</button>
+            <button mat-menu-item (click)="getRulesInfo()"><img src="./assets/image/icon/apply-node-icon.svg">Apply Node
+              Rules</button>
+          </mat-menu>
+          <mat-menu #EdgeRulesMenu="matMenu" class="dropdown-menu-second-list scrollbar">
+            <button mat-menu-item (click)="createNodeRules()"><img
+                src="./assets/image/icon/create-edge-rules-icon.svg">Create Edge Rules</button>
+            <button mat-menu-item><img src="./assets/image/icon/manage-edge-rules-icon.svg">Manage Edge Rules</button>
+            <button mat-menu-item><img src="./assets/image/icon/apply-edge-rules-icon.svg">Apply Edge Rules</button>
+          </mat-menu>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+
+<div class="fileUpload_model" id="fileUpload" *ngIf="rulesFlag">
+  <mat-form-field class="w-100">
+    <mat-label>{{selectLabel}}</mat-label>
+    <mat-select name="rules" [(value)]="rulesvalue">
+      <mat-option *ngFor="let rules of RulesList" [value]="rules">{{rules}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <div class="mb5 w-100  pb-5 applyRule-btn-col">
+    <button (click)="applyRule()" class="btn btn-primary btn-sm w48pr mr2pr">Apply Rule</button>
+    <button (click)="rulesFlag = false" class="btn  btn-default btn-sm w48pr ml2pr">Cancel</button>
+  </div>
+</div>
+

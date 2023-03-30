@@ -1,0 +1,134 @@
+
+<div class="modal-content" *ngIf="grphservice.createNodeRuleModalFlag">
+  <div class="modal-header">
+    <h4 class="modal-title">Create Graph Node Rule </h4>
+    <button mat-dialog-close cdkFocusInitial class="close-btn">&times;</button>
+  </div>
+
+  <div class="table-serch-col">
+    <div class="manage-col-fitter"><span class="txt-fitter"> Rule Name</span>
+      <input type="text" name="rule_name" id="node-rule-name-id">
+    </div>
+    <div class="manage-col-fitter"><span class="txt-fitter">Node Label</span>
+      <!-- <select id="node-label-id" name="labels" [(ngModel)]="labelValue" (change)="getLabelFiltersDetails()">
+	   <option>Select Labels</option>
+        <option *ngFor="let labels of lablesList" [value]="labels">{{labels}}</option>
+      </select> -->
+
+
+
+      <mat-form-field class="matAutocomplete-width">
+        <input id="node-label-id" #labelVal type="text" name="node_label" aria-label="Number" matInput
+          [formControl]="myControl" [matAutocomplete]="auto">
+        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete"
+          (optionSelected)="getLabelFiltersDetails(labelVal.value)">
+          <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+            {{option}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+
+
+
+
+
+    </div>
+    <div class="checkbox">
+      <label class="checkbox-custom">
+        <input type="checkbox" name="isdefault" id="checkID">
+        <span class="checkmark"></span> <span class="Is-def-cl">Is Default</span></label>
+    </div>
+  </div>
+  <div class="table-serch-col">
+    <div class="manage-col-fitter"><span class="txt-fitter">Label Foreground</span>
+      <div class="picker">
+        <input type="text" [ngxMatColorPicker]="picker" [formControl]="colorCtr" name="bg_forground">
+        <ngx-mat-color-toggle matSuffix [for]="picker"></ngx-mat-color-toggle>
+        <ngx-mat-color-picker #picker [touchUi]="touchUi" [color]="color"></ngx-mat-color-picker>
+      </div>
+      <!-- <select id="label-foreground-id">
+        <option value="red">Red</option>
+    <option value="yellow">yellow</option>
+    <option value="blue">blue</option>
+    <option value="Green">Green</option>
+      </select> -->
+    </div>
+    <div class="manage-col-fitter"><span class="txt-fitter">Icon</span>
+      <!-- <select id="icon-id">
+        <option value="./assets/image/imei.png">./assets/image/imei.png</option>
+        <option value="./assets/image/phone.jpg">./assets/image/phone.jpg</option>
+        <option value="./assets/image/user.svg">./assets/image/user.svg</option>
+      </select>  -->
+      <input type="text" #iconVal="ngModel" [(ngModel)]="grphservice.selectedRuleIcon" name="iconVal" id="icon-id"
+        class="customwdth64pr">
+      <button (click)="createImageIcon()" type="button" class="btn btn-default btn-default-custom">
+        <mat-icon>more_horiz</mat-icon>
+      </button>
+
+    </div>
+  </div>
+  <div class="modal-body">
+    <div class="table-row">
+      <div id="builder" class="scrollbar"></div>
+      <div class="d-flex w-100">
+        <button class="btn btn-primary mr-1" (click)="createNodeRule()">Create Rule</button>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+<div class="modal-content" *ngIf="grphservice.manageNodeRuleModalFlag">
+  <div class="modal-header">
+    <h4 class="modal-title">Manage Graph Node Rule </h4>
+    <button mat-dialog-close cdkFocusInitial class="close-btn">&times;</button>
+  </div>
+  <div class="table-serch-col">
+    <div class="manage-col-fitter"><span class="txt-fitter"> Rule Name</span>
+      <select id="node-rule-name-id" name="rules" [(ngModel)]="rulesValue" (change)="getRuleInfoDetails()">
+        <option>Select Node Rule</option>
+        <option *ngFor="let rules of RulesList" [value]="rules">{{rules}}</option>
+      </select>
+
+    </div>
+    <div class="manage-col-fitter"><span class="txt-fitter">Node Label</span>
+      <input id="node-label-id" type="text">
+    </div>
+    <div class="checkbox">
+      <label class="checkbox-custom">
+        <input type="checkbox" id="checkID">
+        <span class="checkmark"></span> <span class="Is-def-cl">Is Default</span></label>
+    </div>
+  </div>
+  <div class="table-serch-col">
+    <div class="manage-col-fitter"><span class="txt-fitter">Label Foreground</span>
+      <select id="label-foreground-id">
+        <option value="red">Red</option>
+        <option value="yellow">yellow</option>
+        <option value="blue">blue</option>
+        <option value="Green">Green</option>
+      </select>
+    </div>
+    <div class="manage-col-fitter"><span class="txt-fitter">Icon</span>
+      <input type="text" id="icon-id" class="customwdth64pr">
+      <button (click)="createImageIcon()" type="button" class="btn btn-default btn-default-custom">
+        <mat-icon>more_horiz</mat-icon>
+      </button>
+
+    </div>
+  </div>
+  <div class="modal-body">
+    <div class="table-row">
+      <div id="builder" class="scrollbar"></div>
+      <div class="d-flex w-100">
+        <button class="btn btn-primary mr-1" (click)="updateNodeRule()">Update Rule</button>
+        <button class="btn btn-primary mr-1" (click)="deleteNodeRule()">Delete Rule</button>
+
+      </div>
+
+    </div>
+  </div>
+</div>
